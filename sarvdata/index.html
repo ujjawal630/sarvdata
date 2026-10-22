@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sarv Data connects businesses with trusted wholesale suppliers and smarter sourcing tools.">
+  <meta name="theme-color" content="#102747">
+  <title>Sarv Data — Source Smarter. Trade Better.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Built for ambitious businesses <span class="announcement-divider">·</span> Discover smarter wholesale sourcing <button id="announcementClose" aria-label="Dismiss announcement">×</button></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Sarv Data home"><span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 36 12v16L20 37 4 28V12L20 3Z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="m11 15 9-5 9 5v10l-9 5-9-5V15Z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="m11 15 9 5 9-5M20 20v10" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span><span>Sarv<span class="brand-light">Data</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#categories">Categories <span class="chevron">⌄</span></a>
+      <a href="#products">Explore Products</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#business-tools">Business tools</a>
+    </nav>
+    <div class="header-actions"><button class="text-button" data-open="signin">Sign in</button><button class="button button-small button-navy" data-open="join">Join free <span>↗</span></button><button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-icon">✳</span> THE BUSINESS-TO-BUSINESS NETWORK</div>
+        <h1>Good business<br>starts with <span>the right</span><br><span class="serif-word">connection.</span></h1>
+        <p class="hero-description">Discover quality suppliers, source in bulk, and bring your business operations together — all in one place.</p>
+        <div class="hero-search">
+          <span class="search-icon">⌕</span><input id="heroSearch" type="search" placeholder="What are you looking to source?" aria-label="Search products"><select id="heroCategory" aria-label="Search category"><option value="all">All categories</option><option>Electronics</option><option>Textiles</option><option>Packaging</option><option>Machinery</option><option>Furniture</option><option>Agriculture</option></select><button id="searchButton" class="button button-orange">Search <span>↗</span></button>
+        </div>
+        <div class="popular-searches"><span>Popular:</span><button data-search="cotton fabric">Cotton fabric</button><i></i><button data-search="packaging">Packaging</button><i></i><button data-search="solar panels">Solar panels</button></div>
+        <div class="hero-trust"><div class="avatar-stack"><span>R</span><span>M</span><span>A</span><span>+</span></div><div><strong>Built for business buyers</strong><small>Find products. Connect. Grow.</small></div><div class="trust-divider"></div><div class="trust-rating"><span>✦</span><strong>Smarter sourcing</strong><small>One connected workspace</small></div></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="hero-image-frame"><img src="https://images.unsplash.com/photo-158652_program?auto=format&fit=crop&w=900&q=85" alt="Warehouse and wholesale logistics" onerror="this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=85'"><div class="image-label"><span class="live-dot"></span><span><strong>Supply, connected.</strong><small>From discovery to delivery</small></span><span class="label-arrow">↗</span></div></div>
+        <div class="floating-card floating-product"><div class="floating-product-image"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=180&q=80" alt="Product preview"></div><div><small>FEATURED CATEGORY</small><strong>Consumer goods</strong><span>Explore wholesale →</span></div></div>
+        <div class="floating-card floating-supplier"><span class="supplier-check">✓</span><div><strong>Supplier discovery</strong><small>Find the right business fit</small></div><span class="mini-bars"><i></i><i></i><i></i><i></i><i></i></span></div>
+        <div class="hero-stamp"><span>BUILT FOR</span><strong>BETTER<br>BUSINESS</strong><span class="stamp-star">✳</span></div>
+      </div>
+      <div class="hero-bottom-note"><span>01 / 03</span><span class="note-line"></span><span>DISCOVER WHAT'S POSSIBLE</span></div>
+    </section>
+
+    <section class="trust-strip">
+      <p>ONE NETWORK. MORE WAYS TO GROW.</p><div class="trust-words"><span>Manufacturers</span><b>✳</b><span>Wholesalers</span><b>✳</b><span>Distributors</span><b>✳</b><span>Growing businesses</span></div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-heading"><div><div class="eyebrow">EXPLORE THE MARKET</div><h2>Every industry.<br><span>A better way to source.</span></h2></div><p>Find the products and partners your business needs to move forward.</p></div>
+      <div class="category-grid">
+        <button class="category-card cat-electronics" data-category="Electronics"><span class="category-icon">⌁</span><span class="category-number">01</span><strong>Electronics</strong><small>Components & devices</small><span class="category-arrow">↗</span></button>
+        <button class="category-card cat-textiles" data-category="Textiles"><span class="category-icon">▧</span><span class="category-number">02</span><strong>Textiles & apparel</strong><small>Fabric, fashion & more</small><span class="category-arrow">↗</span></button>
+        <button class="category-card cat-machinery" data-category="Machinery"><span class="category-icon">⚙</span><span class="category-number">03</span><strong>Machinery</strong><small>Industrial & equipment</small><span class="category-arrow">↗</span></button>
+        <button class="category-card cat-packaging" data-category="Packaging"><span class="category-icon">▤</span><span class="category-number">04</span><strong>Packaging</strong><small>Materials & solutions</small><span class="category-arrow">↗</span></button>
+        <button class="category-card cat-agriculture" data-category="Agriculture"><span class="category-icon">❋</span><span class="category-number">05</span><strong>Agriculture</strong><small>Farm & food supplies</small><span class="category-arrow">↗</span></button>
+        <button class="category-card cat-furniture" data-category="Furniture"><span class="category-icon">⌂</span><span class="category-number">06</span><strong>Furniture</strong><small>Commercial & home</small><span class="category-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="section-heading product-heading"><div><div class="eyebrow">THE SOURCING SHORTLIST</div><h2>Worth a closer <span>look.</span></h2></div><div class="product-controls"><div class="product-tabs"><button class="active" data-filter="all">All products</button><button data-filter="popular">Popular</button><button data-filter="new">New arrivals</button></div><button class="view-all" id="viewAll">View all products <span>↗</span></button></div></div>
+      <div class="results-note" id="resultsNote" aria-live="polite"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="rfq-banner">
+      <div class="rfq-pattern"></div><div class="rfq-copy"><div class="eyebrow eyebrow-light">YOUR REQUIREMENTS. YOUR TERMS.</div><h2>Know what you need?<br><span>Let suppliers come to you.</span></h2><p>Post a request for quotation and make your requirements clear. Compare offers and choose what works for your business.</p><button class="button button-orange" data-open="rfq">Create a free RFQ <span>↗</span></button></div>
+      <div class="rfq-illustration"><div class="rfq-doc"><span class="doc-symbol">↗</span><small>REQUEST FOR QUOTE</small><strong>Packaging<br>materials</strong><div class="doc-line"></div><div class="doc-line short"></div><div class="doc-footer"><span>Quantity</span><b>5,000 units</b></div></div><div class="rfq-bubble bubble-one">3 supplier matches <span>✓</span></div><div class="rfq-bubble bubble-two"><span class="bubble-dot"></span> Ready to compare</div><div class="rfq-orbit"></div></div>
+    </section>
+
+    <section class="section workflow-section" id="how-it-works">
+      <div class="section-heading"><div><div class="eyebrow">SIMPLE BY DESIGN</div><h2>From looking to <span>doing.</span></h2></div><p>Less back-and-forth. More clarity at every step of the sourcing process.</p></div>
+      <div class="workflow-grid"><article class="workflow-card"><div class="workflow-top"><span>01</span><span class="workflow-icon">⌕</span></div><h3>Discover</h3><p>Explore products and suppliers across categories, then narrow down the options that fit your needs.</p><a href="#products">Explore products <span>↗</span></a></article><article class="workflow-card workflow-featured"><div class="workflow-top"><span>02</span><span class="workflow-icon">↗</span></div><h3>Connect</h3><p>Share your requirements, send inquiries, and request quotations with the details that matter.</p><a href="#products">Find your supplier <span>↗</span></a></article><article class="workflow-card"><div class="workflow-top"><span>03</span><span class="workflow-icon">▤</span></div><h3>Manage</h3><p>Bring leads, quotes, products, and business activity into one organized workspace.</p><a href="#business-tools">Explore business tools <span>↗</span></a></article></div>
+    </section>
+
+    <section class="business-tools" id="business-tools"><div class="tools-inner"><div class="tools-copy"><div class="eyebrow">MORE THAN A MARKETPLACE</div><h2>Your business,<br><span>better connected.</span></h2><p>Sourcing is just the beginning. Sarv Data is designed to bring everyday business workflows into one clear, organized space.</p><div class="tool-list"><div><span class="tool-check">✓</span><span><strong>Customer & supplier CRM</strong><small>Keep business relationships organized.</small></span></div><div><span class="tool-check">✓</span><span><strong>Quotations & purchase orders</strong><small>Track the details from inquiry to order.</small></span></div><div><span class="tool-check">✓</span><span><strong>Inventory & business insights</strong><small>Understand activity at a glance.</small></span></div></div><button class="button button-navy" data-open="join">Explore your workspace <span>↗</span></button></div><div class="dashboard-preview"><div class="dash-top"><div><span class="dash-greeting">BUSINESS WORKSPACE</span><h3>Good morning<span>.</span></h3></div><div class="dash-avatar">SD</div></div><div class="dash-stats"><div><small>Open inquiries</small><strong>12</strong><span class="stat-positive">↗ Active pipeline</span></div><div><small>Quotes to review</small><strong>08</strong><span class="stat-neutral">Needs attention</span></div></div><div class="dash-chart"><div class="chart-header"><strong>Activity overview</strong><small>ILLUSTRATIVE PREVIEW</small></div><div class="chart-bars"><i style="height:34%"></i><i style="height:47%"></i><i style="height:39%"></i><i style="height:63%"></i><i style="height:51%"></i><i style="height:78%"></i><i style="height:61%"></i><i style="height:90%"></i><i style="height:71%"></i><i style="height:100%"></i><i style="height:77%"></i><i style="height:86%"></i></div><div class="chart-months"><span>JAN</span><span>MAR</span><span>MAY</span><span>JUL</span><span>SEP</span><span>DEC</span></div></div><div class="dash-activity"><span class="activity-icon">↗</span><div><strong>Quotation received</strong><small>Supplier inquiry · Demo activity</small></div><span class="activity-time">Just now</span></div><div class="dash-watermark">SARV DATA / WORKSPACE</div></div></div></section>
+
+    <section class="closing-cta"><div class="closing-star">✳</div><div class="eyebrow">YOUR NEXT CONNECTION STARTS HERE</div><h2>Make room for<br><span>better business.</span></h2><p>Discover suppliers, find new opportunities, and build a smarter way to work.</p><div class="closing-actions"><button class="button button-orange" data-open="join">Get started for free <span>↗</span></button><button class="button button-outline" data-open="rfq">Post a buying request</button></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><div class="footer-brand-column"><a class="brand brand-footer" href="#"><span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 36 12v16L20 37 4 28V12L20 3Z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="m11 15 9-5 9 5v10l-9 5-9-5V15Z" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span><span>Sarv<span class="brand-light">Data</span></span></a><p>A clearer way to source, connect, and grow your business.</p><div class="footer-socials"><a href="#products" aria-label="Explore products">in</a><a href="#categories" aria-label="Explore categories">◎</a><a href="#how-it-works" aria-label="How it works">↗</a></div></div><div class="footer-column"><strong>Marketplace</strong><a href="#categories">Browse categories</a><a href="#products">Explore products</a><a href="#products">Find suppliers</a><a href="#how-it-works">How it works</a></div><div class="footer-column"><strong>For businesses</strong><a href="#business-tools">Business tools</a><a href="#products" data-open="rfq">Request a quotation</a><a href="#business-tools">Supplier workspace</a><a href="#business-tools">Buyer workspace</a></div><div class="footer-column footer-newsletter"><strong>Stay in the loop</strong><p>Product updates and smarter sourcing ideas, occasionally.</p><form id="newsletterForm"><label class="sr-only" for="newsletterEmail">Email address</label><input id="newsletterEmail" type="email" placeholder="Your work email" required><button aria-label="Subscribe">↗</button></form><small id="newsletterMessage" aria-live="polite">No spam. Just useful updates.</small></div></div><div class="footer-bottom"><span>© <span id="year"></span> Sarv Data. All rights reserved.</span><span>Designed for better business connections.</span><div><a href="#privacy">Privacy</a><a href="#terms">Terms</a></div></div></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close dialog">×</button><div class="modal-kicker">SARV DATA / GET CONNECTED</div><h2 id="modalTitle">Let's get started.</h2><p id="modalDescription">Tell us a little about what you need.</p><form id="modalForm"><div id="modalFields"></div><button class="button button-orange modal-submit" type="submit">Continue <span>↗</span></button><p class="modal-footnote">Demo interface — submissions are not sent to a live backend.</p></form></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
